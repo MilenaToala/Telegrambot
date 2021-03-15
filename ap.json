@@ -3,9 +3,9 @@
     iata: GYE,
     nombre: "Aeropuerto Internacional José Joaquín de Olmedo",
     Pais:Ecuador,
-    Provincia Guayas,
+    Provincia: Guayas,
     ciudad: Guayaquil, 
-    Region: America/ Guayaquil
+    Region: America/ Guayaquil,
    },
    {
     iata: UIO,
@@ -13,7 +13,7 @@
     Pais:Ecuador,
     Provincia: Pichincha,
     ciudad: Quito, 
-    Region: America/ Guayaquil
+    Region: America/ Guayaquil,
    },
    
 ]
