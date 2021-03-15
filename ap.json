@@ -5,7 +5,7 @@
 	"pais": "Ecuador"
 	"Provincia": "Guayas",
         "ciudad": "Guayaquil",
-        "hora": "50 min"
+        "hora": "50 min",
         "Region": "America/GYE"
     },
     {
@@ -14,7 +14,7 @@
 	"pais": "Ecuador"
 	"Provincia": "Pichincha",
         "ciudad": "Quito",
-        "hora": "50 min"
+        "hora": "50 min",
         "Region": "America/UIO"
     }
    
