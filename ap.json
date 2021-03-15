@@ -2,7 +2,7 @@
     {
         "iata": "GYE",
         "nombre": "Aeropuerto Internacional José Joaquín de Olmedo",
-	"pais": "Ecuador"
+	"pais": "Ecuador",
 	"Provincia": "Guayas",
         "ciudad": "Guayaquil",
         "hora": "50 min",
@@ -11,7 +11,7 @@
     {
         "iata": "UIO",
         "nombre": "Aeropuerto Internacional de Quito",
-	"pais": "Ecuador"
+	"pais": "Ecuador",
 	"Provincia": "Pichincha",
         "ciudad": "Quito",
         "hora": "50 min",
