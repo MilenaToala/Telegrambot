@@ -15,7 +15,7 @@ class Vuelo:
         return "Lugar de llegada: " + self.destino._resp_() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
-class ap:
+class airport:
     def _init_(self, datos_json):
         self.nombre = datos_json["nombre"]
         self.iata = datos_json["iata"]
