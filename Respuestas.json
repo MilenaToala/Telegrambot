@@ -1,5 +1,5 @@
 {
-    "saludar" :"Bienvenido/a a la aerolinea AIRJGMT" \n",
+    "saludar" :"Bienvenido/a a la aerolinea AIRJGMT\n",
     "ayuda" : ["Es un gusto atenderle, a continuacion por favor siga las indicaciones para poder registrar, o consultar un vuelo con nosotros: \n\n"
                 "**************** INDICACIONES: ******************\n\n",
                 "*- Usa /help para acceder al menu de ayuda\n\n",
