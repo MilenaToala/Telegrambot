@@ -22,7 +22,7 @@ class Aeropuertos:
         self.pais = data["pais"]
         self.estado = data["provincia"]
         self.ciudad = data["ciudad"]
-        self.Registros = []
+        self.registros = []
 
     def nuevo_vuelo(self, ap, min_Registros = 4, max_Registros = 8):
         for i in range( 0, rnd.randrange(min_Registros, max_Registros)):
@@ -34,10 +34,10 @@ class Aeropuertos:
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
             fly = vuelos(ap, hora, fecha, self)
-            self.Registros.append(fly)
+            self.registros.append(fly)
 
     def borrar(self):
-        for fly in self.Registros:
+        for fly in self.registros:
             print("Destino: " + fly.destino)
 
     def mostrar(self):
