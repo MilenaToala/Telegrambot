@@ -14,7 +14,7 @@ class vuelos:
     def mostrar(self):
         return "Lugar de llegada: " + self.destino.mostrar() + ","+" fecha de llegada: " + self.fecha.isoformat() +","+" hora de llegada: " + self.hora.isoformat()
 
-
+#usamos un archivo.json para acceder a los datos
 class Aeropuertos:
     def registrar(self, data):
         self.nombre = data["nombre"]
@@ -22,7 +22,6 @@ class Aeropuertos:
         self.pais = data["pais"]
         self.estado = data["provincia"]
         self.ciudad = data["ciudad"]
-        self.region = data["region"]
         self.Registros = []
 
     def nuevo_vuelo(self, ap, min_Registros = 4, max_Registros = 8):
