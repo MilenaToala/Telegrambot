@@ -1,0 +1,12 @@
+{
+    "saludar" :"Bienvenido/a a la aerolinea AIRJGMT" \n",
+    "ayuda" : ["Es un gusto atenderle, a continuacion por favor siga las indicaciones para poder registrar, o consultar un vuelo con nosotros: \n\n"
+                "**************** INDICACIONES: ******************\n\n",
+                "*- Usa /help para acceder al menu de ayuda\n\n",
+                "*- Usa /list para visualizar la lista de vuelos\n\n",
+                "*- Use /searchd o /searcho acompañado de: <Código IATA>, <Nombre del Aeropuerto>, <Ciudad o País> para buscar todos los vuelos disponible desde o hacia este aeropuerto \n Ejemplo1: /searchd GYE \n Ejemplo2: /searcho GYE\n\n",
+                "*- Use /buy_ticket para reservar solo el vuelo de ida \n Ejemplo:  /buy_ticket GYE JFK 3\n\n",
+                "*- Use /buyrt_ticket para reservar vuelo de ida y regreso \n Ejemplo:  /buyrt_ticket GYE JFK 3\n\n"],
+    "aceptar" : "Felicitaciones, ha registrado con exito un nuevo vuelo.",
+    "cancelar" : "Su vuelo ha sido cancelado, siga usando nuestros servicios."
+}
