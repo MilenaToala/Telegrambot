@@ -3,7 +3,7 @@ import random as rnd
 import calendar
 import pprint
 
-class Vuelo:
+class vuelos:
     def _init_(self, fecha, hora, destino, origen):
         self.fecha = fecha
         self.hora = hora
@@ -15,7 +15,7 @@ class Vuelo:
         return "Lugar de llegada: " + self.destino._resp_() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
-class airport:
+class Aeropuertos:
     def _init_(self, datos_json):
         self.nombre = datos_json["nombre"]
         self.iata = datos_json["iata"]
@@ -35,7 +35,7 @@ class airport:
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
             fly = Vuelo(ap, hora, fecha, self)
-            self.Registros.append(vuelo)
+            self.Registros.append(fly)
 
     def borrar(self):
         for fly in self.Registros:
