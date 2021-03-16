@@ -5,7 +5,7 @@
 	"pais": "Ecuador",
 	"provincia": "Guayas",
         "ciudad": "Guayaquil",
-        "region": "America/GYE"
+        "region": "America/Ecuador"
     },
     {
         "iata": "UIO",
@@ -13,7 +13,31 @@
 	"pais": "Ecuador",
 	"provincia": "Pichincha",
         "ciudad": "Quito",
-        "region": "America/UIO"
+        "region": "America/Ecuador"
+    },
+    {
+        "iata": "CCS",
+        "nombre": "Aeropuerto Simón Bolívar",
+	"pais": "Venezuela",
+	"provincia": "Caracas",
+        "ciudad": "Maiquetía",
+        "region": "America/Venezuela"
+    },
+    {
+       	"iata": "MAR",
+        "nombre": "Aeropuerto Internacional La Chinita",
+	"pais": "Venezuela",
+	"provincia": "Caracas",
+        "ciudad": "Maracaibo",
+        "region": "America/Venezuela"
+    },
+    {
+       	"iata": "BOG",
+        "nombre": "Aeropuerto Internacional El Dorado",
+	"pais": "Colombia",
+	"provincia": "Bogotá",
+        "ciudad": "Bogotá",
+        "region": "America/Venezuela"
     }
    
 ]
