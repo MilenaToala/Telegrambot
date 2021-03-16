@@ -5,8 +5,8 @@
 	"pais": "Ecuador",
 	"provincia": "Guayas",
         "ciudad": "Guayaquil",
-        "hora": "50 min",
-        "region": "America/GYE"
+        "region": "America/GYE",
+	"hora": "50 min"
     },
     {
         "iata": "UIO",
@@ -14,8 +14,8 @@
 	"pais": "Ecuador",
 	"provincia": "Pichincha",
         "ciudad": "Quito",
-        "hora": "50 min",
-        "region": "America/UIO"
+        "region": "America/UIO",
+	"hora": "50 min"
     }
    
 ]
