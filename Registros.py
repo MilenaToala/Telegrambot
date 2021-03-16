@@ -24,12 +24,12 @@ class Aeropuertos:
         self.ciudad = data["ciudad"]
         self.registros = []
 
-    def nuevo_vuelo(self, ap, min_Registros = 4, max_Registros = 8):
+    def nuevo_vuelo(self, ap1, min_Registros = 4, max_Registros = 8):
         for i in range( 0, rnd.randrange(min_Registros, max_Registros)):
             aport = self
 
-            while ap == self:
-                ap = ap[rnd.randrange(0, len(aport))]
+            while aport == self:
+                aport = ap1[rnd.randrange(0, len(ap1))]
 
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
