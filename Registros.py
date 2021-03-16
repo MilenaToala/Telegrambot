@@ -12,17 +12,17 @@ class vuelos:
         self.asientos = 180
 
     def mostrar(self):
-        return "Lugar de llegada: " + self.destino.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
+        return "Lugar de llegada: " + self.destino.mostrar() + ","+" fecha de llegada: " + self.fecha.isoformat() +","+" hora de llegada: " + self.hora.isoformat()
 
 
 class Aeropuertos:
-    def registrar(self, datos_json):
-        self.nombre = datos_json["nombre"]
-        self.iata = datos_json["iata"]
-        self.pais = datos_json["pais"]
-        self.estado = datos_json["provincia"]
-        self.ciudad = datos_json["ciudad"]
-        self.region = datos_json["region"]
+    def registrar(self, data):
+        self.nombre = data["nombre"]
+        self.iata = data["iata"]
+        self.pais = data["pais"]
+        self.estado = data["provincia"]
+        self.ciudad = data["ciudad"]
+        self.region = data["region"]
         self.Registros = []
 
     def nuevo_vuelo(self, ap, min_Registros = 4, max_Registros = 8):
@@ -34,7 +34,7 @@ class Aeropuertos:
 
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
-            fly = Vuelo(ap, hora, fecha, self)
+            fly = vuelos(ap, hora, fecha, self)
             self.Registros.append(fly)
 
     def borrar(self):
