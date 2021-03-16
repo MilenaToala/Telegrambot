@@ -16,7 +16,7 @@ class vuelos:
 
 
 class Aeropuertos:
-    def _init_(self, datos_json):
+    def registrar(self, datos_json):
         self.nombre = datos_json["nombre"]
         self.iata = datos_json["iata"]
         self.pais = datos_json["pais"]
@@ -41,5 +41,5 @@ class Aeropuertos:
         for fly in self.Registros:
             print("Destino: " + fly.destino)
 
-    def _repr_(self):
+    def mostrar(self):
         return "Destino: " + self.nombre + ", país: " + self.pais
