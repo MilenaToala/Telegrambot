@@ -4,15 +4,15 @@ import calendar
 import pprint
 
 class vuelos:
-    def _init_(self, fecha, hora, destino, origen):
+    def registrar(self, fecha, hora, destino, origen):
         self.fecha = fecha
         self.hora = hora
         self.origen = origen
         self.destino = destino
         self.asientos = 180
 
-    def _repr_(self):
-        return "Lugar de llegada: " + self.destino._resp_() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
+    def mostrar(self):
+        return "Lugar de llegada: " + self.destino.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
 class Aeropuertos:
