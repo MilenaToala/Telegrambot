@@ -2,15 +2,15 @@ import datetime
 import random as rd
 
 class Vuelo:
-    def __init__(self, aeropuerto_destino, hora, fecha, aeropuerto_origen):
-        self.aeropuerto_origen = aeropuerto_origen
-        self.aeropuerto_destino = aeropuerto_destino
-        self.hora = hora
-        self.fecha = fecha
-        self.asientos = 100
+    def __init__(self, destino, horas, fechas, origen):
+        self.origen = origen
+        self.destino = destino
+        self.horas = horas
+        self.fechas = fechas
+        self.asientos = 180
 
     def __repr__(self):
-        return "Aeropuerto destino: " + self.aeropuerto_destino.__repr__() + ", fecha: " + self.fecha.isoformat() +", hora: " + self.hora.isoformat()
+        return "Aeropuerto destino: " + self.destino.__repr__() + ", fecha: " + self.fechas.isoformat() +", hora: " + self.horas.isoformat()
 
 
 class Aeropuerto:
@@ -36,7 +36,7 @@ class Aeropuerto:
 
     def eliminar_vuelos(self):
         for vuelo in self.vuelos:
-            print("Aeropuerto: " + vuelo.aeropuerto_destino)
+            print("Aeropuerto: " + vuelo.destino)
 
     def __repr__(self):
         return "Aeropuerto: " + self.nombre + ", país: " + self.pais
