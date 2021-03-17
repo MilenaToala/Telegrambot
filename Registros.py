@@ -13,11 +13,11 @@ class Recorrido:
         return "Lugar de LLegada: " + self.destino.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
-class Aeropuerto:
+class Aeropuertos:
     def comienzo(self, data):
         self.nombre = data["nombre"]
         self.iata = data["iata"]
-        self.pais = data"pais"]
+        self.pais = data["pais"]
         self.estado = data["provincia"]
         self.ciudad = data["region"]
         self.fly = []
