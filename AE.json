@@ -1,0 +1,122 @@
+[
+    {
+        " iata " : " GYE " ,
+        " nombre " : " Aeropuerto Internacional José Joaquín de Olmedo " ,
+	      " pais " : " Ecuador " ,
+	      " provincia " : " Guayas " ,
+        " ciudad " : " Guayaquil " ,
+        " region " : " America / Ecuador "
+    },
+    {
+        " iata " : " UIO " ,
+        " nombre " : " Aeropuerto Internacional de Quito " ,
+	      " pais " : " Ecuador " ,
+	      " provincia " : " Pichincha " ,
+        " ciudad " : " Quito " ,
+        " region " : " America / Ecuador "
+    },
+    {
+        " iata " : " CCS " ,
+        " nombre " : " Aeropuerto Simón Bolívar " ,
+        " pais " : " Venezuela " ,
+	      " provincia " : " Caracas " ,
+        " ciudad " : " Maiquetía " ,
+        " region " : " America / Venezuela "
+    },
+    {
+       	" iata " : " MAR " ,
+        " nombre " : " Aeropuerto Internacional La Chinita " ,
+	      " pais " : " Venezuela " ,
+	      " provincia " : " Caracas " ,
+        " ciudad " : " Maracaibo " ,
+        " region " : " America / Venezuela "
+    },
+    {
+       	" iata " : " BOG " ,
+        " nombre " : " Aeropuerto Internacional El Dorado " ,
+	      " pais " : " Colombia " ,
+	      " provincia " : " Bogotá " ,
+        " ciudad " : " Bogotá " ,
+        " region " : " America / Colombia "
+    },
+    {
+       	" iata " : " PTY " ,
+        " nombre " : " Aeropuerto Internacional de Tocumen " ,
+	      " pais " : " Panamá " ,
+	      " provincia " : " Panamá " ,
+        " ciudad " : " Panamá " ,
+        " region " : " America / Panamá "
+    },
+    {
+       	" iata " : " TXL" ,
+        " nombre " : " Aeropuerto Tegel " ,
+	      " pais " : "Alemania " ,
+	      " provincia " : " Berlina " ,
+        " ciudad " : " Berlina " ,
+        " region " : " Europa / Alemania "
+    },
+    {
+       	" iata " : " VLC " ,
+        " nombre " : " Aeropuerto Manises" ,
+	      " pais " : " España " ,
+	      " provincia " : " Valencia " ,
+        " ciudad " : " Valencia " ,
+        " region " : " Europa / España "
+    },
+    {
+       	" iata " : " HKG " ,
+        " nombre " : " Aeropuerto Internacional" ,
+	      " pais " : "Hong Kong " ,
+	      " provincia " : " Hong Kong " ,
+        " ciudad " : " Hong Kong " ,
+        " region " : " Asia / Hong Kong"
+    },
+    {
+       	" iata " : " ACA " ,
+        " nombre " : " Aeropuerto En t. Gral. Juan alvarez " ,
+	      " pais " : " México " ,
+	      " provincia " : " Acapulco " ,
+        " ciudad " : " 	Acapulco " ,
+        " region " : " America / México "
+    },
+    {
+       	" iata " : " CPT " ,
+        " nombre " : " Aeropuerto Internacional de Ciudad del Cabo " ,
+	      " pais " : " Sudáfrica " ,
+	      " provincia " : " Ciudad del Cabo " ,
+        " ciudad " : " 	Ciudad del Cabo " ,
+        " region " : " África / Sudáfrica "
+    },
+    {
+       	" iata " : " TPE " ,
+        " nombre " : " Aeropuerto Internacional de Chiang Kai Shek " ,
+	      " pais " : " Taiwán " ,
+	      " provincia " : " Taipei " ,
+        " ciudad " : " 	Taipei " ,
+        " region " : " Asia / Taiwán "
+    },
+    {
+       	" iata " : " 	SEL " ,
+        " nombre " : " Aeropuerto Incheon Internacional " ,
+	      " pais " : " Corea " ,
+	      " provincia " : " Seúl " ,
+        " ciudad " : " 	Seúl " ,
+        " region " : " Asia / Corea "
+    },
+    {
+       	" iata " : " L0S " ,
+        " nombre " : " Aeropuerto Murtala Muhammed " ,
+	      " pais " : " Nigeria" ,
+	      " provincia " : " Lagos " ,
+        " ciudad " : " 	Lagos " ,
+        " region " : " África / Nigeria "
+    },
+    {
+       	" iata " : " NBO " ,
+        " nombre " : " Aeropuerto Kenyatta " ,
+	      " pais " : " Kenia " ,
+	      " provincia " : " Nairobi " ,
+        " ciudad " : " 	Nairobi " ,
+        " region " : " África / Kenia"
+    }
+]
