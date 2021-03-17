@@ -1,44 +1,42 @@
 import datetime
-import random as rnd
-import calendar
-import pprint
+import random as rd
 
-class vuelos:
-    def registrar(self, fecha, hora, destino, origen):
-        self.fecha = fecha
+class Vuelo:
+    def __init__(self, aeropuerto_destino, hora, fecha, aeropuerto_origen):
+        self.aeropuerto_origen = aeropuerto_origen
+        self.aeropuerto_destino = aeropuerto_destino
         self.hora = hora
-        self.origen = origen
-        self.destino = destino
-        self.asientos = 180
+        self.fecha = fecha
+        self.asientos = 100
 
-    def mostrar(self):
-        return "Lugar de llegada: " + self.destino.mostrar() + ","+" fecha de llegada: " + self.fecha.isoformat() +","+" hora de llegada: " + self.hora.isoformat()
+    def __repr__(self):
+        return "Aeropuerto destino: " + self.aeropuerto_destino.__repr__() + ", fecha: " + self.fecha.isoformat() +", hora: " + self.hora.isoformat()
 
-#usamos un archivo.json para acceder a los datos
-class Aeropuertos:
-    def registrar(self, data):
-        self.nombre = data["nombre"]
-        self.iata = data["iata"]
-        self.pais = data["pais"]
-        self.estado = data["provincia"]
-        self.ciudad = data["ciudad"]
-        self.registros = []
 
-    def nuevo_vuelo(self, ap1, min_Registros = 4, max_Registros = 8):
-        for i in range( 0, rnd.randrange(min_Registros, max_Registros)):
-            aport = self
+class Aeropuerto:
+    def __init__(self, datos_json):
+        self.nombre = datos_json["nombre"]
+        self.iata = datos_json["iata"]
+        self.pais = datos_json["pais"]
+        self.estado = datos_json["provincia"]
+        self.ciudad = datos_json["region"]
+        self.vuelos = []
 
-            while aport == self:
-                aport = ap1[rnd.randrange(0, len(ap1))]
+    def generar_vuelos(self, aeropuertos, min_vuelos = 4, max_vuelos = 8):
+        for i in range( 0, rd.randrange(min_vuelos, max_vuelos)):
+            aeropuerto = self
 
-            hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
-            fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
-            fly = vuelos(aport, hora, fecha, self)
-            self.registros.append(fly)
+            while aeropuerto == self:
+                aeropuerto = aeropuertos[rd.randrange(0, len(aeropuertos))]
 
-    def borrar(self):
-        for fly in self.registros:
-            print("Aeropuertos: " + fly.destino)
+            hora = datetime.time(rd.randrange(0, 24), rd.randrange(0, 60))
+            fecha = datetime.date.today() + datetime.timedelta(days= rd.randrange(1, 16))
+            vuelo = Vuelo(aeropuerto, hora, fecha, self)
+            self.vuelos.append(vuelo)
 
-    def mostrar(self):
-        return "Destino: " + self.nombre + ", pais: " + self.pais
+    def eliminar_vuelos(self):
+        for vuelo in self.vuelos:
+            print("Aeropuerto: " + vuelo.aeropuerto_destino)
+
+    def __repr__(self):
+        return "Aeropuerto: " + self.nombre + ", país: " + self.pais
