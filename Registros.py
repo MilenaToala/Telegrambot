@@ -33,12 +33,12 @@ class Aeropuertos:
 
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
-            fly = vuelos(ap, hora, fecha, self)
+            fly = vuelos(aport, hora, fecha, self)
             self.registros.append(fly)
 
     def borrar(self):
         for fly in self.registros:
-            print("Destino: " + fly.destino)
+            print("Aeropuertos: " + fly.destino)
 
     def mostrar(self):
-        return "Destino: " + self.nombre + ", país: " + self.pais
+        return "Destino: " + self.nombre + ", pais: " + self.pais
