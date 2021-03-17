@@ -1,42 +1,42 @@
 import datetime
 import random as rd
 
-class Recorrido:
-    def registrar(self, destino, hora, fecha, origen):
-        self.aero_1 = origen
-        self.aero_2 = destino
+class Vuelo:
+    def __init__(self, aeropuerto_destino, hora, fecha, aeropuerto_origen):
+        self.aeropuerto_origen = aeropuerto_origen
+        self.aeropuerto_destino = aeropuerto_destino
         self.hora = hora
         self.fecha = fecha
-        self.asientos = 180
+        self.asientos = 100
 
-    def mostrar(self):
-        return "Lugar de LLegada: " + self.aero_2.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
+    def __repr__(self):
+        return "Aeropuerto destino: " + self.aeropuerto_destino.__repr__() + ", fecha: " + self.fecha.isoformat() +", hora: " + self.hora.isoformat()
 
 
 class Aeropuerto:
-    def comienzo(self, data):
-        self.nombre = data["nombre"]
-        self.iata = data["iata"]
-        self.pais = data["pais"]
-        self.estado = data["provincia"]
-        self.ciudad = data["region"]
-        self.fly = []
+    def __init__(self, datos_json):
+        self.nombre = datos_json["nombre"]
+        self.iata = datos_json["iata"]
+        self.pais = datos_json["pais"]
+        self.estado = datos_json["provincia"]
+        self.ciudad = datos_json["ciudad"]
+        self.vuelos = []
 
-    def nuevos_vuelos(self, aeroptos, min_valor = 4, max_valor = 8):
+    def generar_vuelos(self, aeropuertos, min_valor = 4, max_valor = 8):
         for i in range( 0, rd.randrange(min_valor, max_valor)):
-            aeropuerto_12 = self
+            aeropuerto = self
 
-            while aeropuerto_12 == self:
-                aeropuerto_12 = aeroptos[rd.randrange(0, len(aeroptos))]
+            while aeropuerto == self:
+                aeropuerto = aeropuertos[rd.randrange(0, len(aeropuertos))]
 
             hora = datetime.time(rd.randrange(0, 24), rd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rd.randrange(1, 16))
-            avion = Recorrido(aeropuerto_12, hora, fecha, self)
-            self.fly.append(avion)
+            vuelo = Vuelo(aeropuerto, hora, fecha, self)
+            self.vuelos.append(vuelo)
 
-    def borrar(self):
-        for avion in self.fly:
-            print("Aeropuerto: " + avion.aero_2)
+    def eliminar_vuelos(self):
+        for vuelo in self.vuelos:
+            print("Aeropuerto: " + vuelo.aeropuerto_destino)
 
-    def mostrar(self):
+    def __repr__(self):
         return "Aeropuerto: " + self.nombre + ", país: " + self.pais
