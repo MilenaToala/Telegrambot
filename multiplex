@@ -20,3 +20,15 @@ class Aport:
         self.estado = data["provincia"]
         self.ciudad = data["ciudad"]
         self.arrayv1 = []
+       
+    def new_vuelo(self, aptos, min_valor = 4, max_valor = 8):
+        for i in range( 0, rnd.randrange(min_valor, max_valor)):
+            aeropuerto = self
+
+            while aeropuerto == self:
+                aeropuerto = aptos[rnd.randrange(0, len(aptos))]
+
+            hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
+            fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
+            vuelo = Recorrido(aeropuerto, hora, fecha, self)
+            self.arrayv1.append(vuelo)
