@@ -20,7 +20,7 @@ class Aport:
         self.pais = data["pais"]
         self.estado = data["provincia"]
         self.ciudad = data["ciudad"]
-        self.vuelos = []
+        self.arrayv1 = []
 
     def new_vuelo(self, aptos, min_valor = 4, max_valor = 8):
         for i in range( 0, rnd.randrange(min_valor, max_valor)):
@@ -32,10 +32,10 @@ class Aport:
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
             vuelo = Recorrido(aeropuerto, hora, fecha, self)
-            self.vuelos.append(vuelo)
+            self.arrayv1.append(vuelo)
 
     def Borrar(self):
-        for vuelo in self.vuelos:
+        for vuelo in self.arrayv1:
             print("Aeropuerto: " + vuelo.destino)
 
     def __repr__(self):
