@@ -1,5 +1,5 @@
 import datetime
-import random as rd
+import random as rnd
 
 class Vuelo:
     def __init__(self, destino, horas, fechas, origen):
@@ -23,14 +23,14 @@ class Aeropuerto:
         self.vuelos = []
 
     def generar_vuelos(self, aeropuertos, min_valor = 4, max_valor = 8):
-        for i in range( 0, rd.randrange(min_valor, max_valor)):
+        for i in range( 0, rnd.randrange(min_valor, max_valor)):
             aeropuerto = self
 
             while aeropuerto == self:
-                aeropuerto = aeropuertos[rd.randrange(0, len(aeropuertos))]
+                aeropuerto = aeropuertos[rnd.randrange(0, len(aeropuertos))]
 
-            hora = datetime.time(rd.randrange(0, 24), rd.randrange(0, 60))
-            fecha = datetime.date.today() + datetime.timedelta(days= rd.randrange(1, 16))
+            hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
+            fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
             vuelo = Vuelo(aeropuerto, hora, fecha, self)
             self.vuelos.append(vuelo)
 
