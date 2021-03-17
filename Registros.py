@@ -22,12 +22,12 @@ class Aport:
         self.ciudad = data["ciudad"]
         self.vuelos = []
 
-    def new_vuelo(self, aeropuertos, min_valor = 4, max_valor = 8):
+    def new_vuelo(self, aptos, min_valor = 4, max_valor = 8):
         for i in range( 0, rnd.randrange(min_valor, max_valor)):
             aeropuerto = self
 
             while aeropuerto == self:
-                aeropuerto = aeropuertos[rnd.randrange(0, len(aeropuertos))]
+                aeropuerto = aptos[rnd.randrange(0, len(aptos))]
 
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
