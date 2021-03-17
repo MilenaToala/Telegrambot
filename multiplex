@@ -10,4 +10,13 @@ class Recorrido:
         self.asientos = 180
         
     def __repr__(self): #el método __repr__ se usa para depuración y desarrollo, por lo que sus mensajes ha de ser inequívocos. Además, __repr__ calcula la representación de cadena “oficial” de un objeto
-        return "Aeropuerto destino: " + self.destino.__repr__() + ", fecha: " + self.fecha.isoformat() +", hora: " + self.hora.isoformat()
+        return "Aeropuerto destino: " + self.destino.__repr__() + ", fechas: " + self.fecha.isoformat() +", horas: " + self.hora.isoformat()
+        
+class Aport:
+    def __init__(self, data):
+        self.nombre = data["nombre"]
+        self.iata = data["iata"]
+        self.pais = data["pais"]
+        self.estado = data["provincia"]
+        self.ciudad = data["ciudad"]
+        self.arrayv1 = []
