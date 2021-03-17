@@ -2,14 +2,14 @@ import datetime
 import random as rnd
 
 class Vuelo:
-    def __init__(self, destino, horas, fechas, origen):
+    def __init__(self, destino, horas, fechas, origen): #El método __init__ es un método especial de una clase en Python. El objetivo fundamental del método __init__ es inicializar los atributos del objeto que creamos.
         self.origen = origen
         self.destino = destino
         self.horas = horas
         self.fechas = fechas
         self.asientos = 180
 
-    def __repr__(self):
+    def __repr__(self): #el método __repr__ se usa para depuración y desarrollo, por lo que sus mensajes ha de ser inequívocos. Además, __repr__ calcula la representación de cadena “oficial” de un objeto
         return "Aeropuerto destino: " + self.destino.__repr__() + ", fecha: " + self.fechas.isoformat() +", hora: " + self.horas.isoformat()
 
 
@@ -34,7 +34,7 @@ class Aeropuerto:
             vuelo = Vuelo(aeropuerto, hora, fecha, self)
             self.vuelos.append(vuelo)
 
-    def eliminar_vuelos(self):
+    def Borrar(self):
         for vuelo in self.vuelos:
             print("Aeropuerto: " + vuelo.destino)
 
