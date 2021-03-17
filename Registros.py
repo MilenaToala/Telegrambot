@@ -3,8 +3,8 @@ import random as rd
 
 class Recorrido:
     def registrar(self, destino, hora, fecha, origen):
-        self.aeropuerto_origen = origen
-        self.aeropuerto_destino = destino
+        self.aero1 = origen
+        self.aero2 = destino
         self.hora = hora
         self.fecha = fecha
         self.asientos = 100
@@ -13,7 +13,7 @@ class Recorrido:
         return "Lugar de LLegada: " + self.destino.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
-class Aeropuertos:
+class Aeropuerto:
     def comienzo(self, data):
         self.nombre = data["nombre"]
         self.iata = data["iata"]
