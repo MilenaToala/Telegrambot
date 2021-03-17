@@ -32,3 +32,10 @@ class Aport:
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
             vuelo = Recorrido(aeropuerto, hora, fecha, self)
             self.arrayv1.append(vuelo)
+            
+    def Borrar(self):
+        for vuelo in self.arrayv1:
+            print("Aeropuerto: " + vuelo.destino)
+
+    def __repr__(self):
+        return "Aeropuerto: " + self.nombre + ", país: " + self.pais     
