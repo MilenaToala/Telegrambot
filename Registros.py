@@ -10,7 +10,7 @@ class Recorrido:
         self.asientos = 100
 
     def mostrar(self):
-        return "Lugar de LLegada: " + self.destino.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
+        return "Lugar de LLegada: " + self.aero2.mostrar() + ", fecha de llegada: " + self.fecha.isoformat() +", hora de llegada: " + self.hora.isoformat()
 
 
 class Aeropuerto:
@@ -36,7 +36,7 @@ class Aeropuerto:
 
     def borrar(self):
         for avion in self.fly:
-            print("Aeropuerto: " + avion.destino)
+            print("Aeropuerto: " + avion.aero2)
 
     def mostrar(self):
         return "Aeropuerto: " + self.nombre + ", país: " + self.pais
