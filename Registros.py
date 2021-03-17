@@ -1,7 +1,7 @@
 import datetime
 import random as rnd
 
-class Vuelo:
+class Recorrido:
     def __init__(self, destino, horas, fechas, origen): #El método __init__ es un método especial de una clase en Python. El objetivo fundamental del método __init__ es inicializar los atributos del objeto que creamos.
         self.origen = origen
         self.destino = destino
@@ -31,7 +31,7 @@ class Aeropuerto:
 
             hora = datetime.time(rnd.randrange(0, 24), rnd.randrange(0, 60))
             fecha = datetime.date.today() + datetime.timedelta(days= rnd.randrange(1, 16))
-            vuelo = Vuelo(aeropuerto, hora, fecha, self)
+            vuelo = Recorrido(aeropuerto, hora, fecha, self)
             self.vuelos.append(vuelo)
 
     def Borrar(self):
