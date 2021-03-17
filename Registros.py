@@ -14,12 +14,12 @@ class Recorrido:
 
 
 class Aport:
-    def __init__(self, datos_json):
-        self.nombre = datos_json["nombre"]
-        self.iata = datos_json["iata"]
-        self.pais = datos_json["pais"]
-        self.estado = datos_json["provincia"]
-        self.ciudad = datos_json["ciudad"]
+    def __init__(self, data):
+        self.nombre = data["nombre"]
+        self.iata = data["iata"]
+        self.pais = data["pais"]
+        self.estado = data["provincia"]
+        self.ciudad = data["ciudad"]
         self.vuelos = []
 
     def new_vuelo(self, aeropuertos, min_valor = 4, max_valor = 8):
