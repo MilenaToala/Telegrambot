@@ -22,7 +22,7 @@ class Aport:
         self.ciudad = datos_json["ciudad"]
         self.vuelos = []
 
-    def generar_vuelos(self, aeropuertos, min_valor = 4, max_valor = 8):
+    def new_vuelo(self, aeropuertos, min_valor = 4, max_valor = 8):
         for i in range( 0, rnd.randrange(min_valor, max_valor)):
             aeropuerto = self
 
