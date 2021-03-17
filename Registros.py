@@ -13,7 +13,7 @@ class Recorrido:
         return "Aeropuerto destino: " + self.destino.__repr__() + ", fecha: " + self.fechas.isoformat() +", hora: " + self.horas.isoformat()
 
 
-class Aeropuerto:
+class Aport:
     def __init__(self, datos_json):
         self.nombre = datos_json["nombre"]
         self.iata = datos_json["iata"]
