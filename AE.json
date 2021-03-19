@@ -26,8 +26,8 @@
     {
        	" iata " : " MAR " ,
         " nombre " : " Aeropuerto Internacional La Chinita " ,
-	      " pais " : " Venezuela " ,
-	      " provincia " : " Caracas " ,
+	" pais " : " Venezuela " ,
+	" provincia " : " Caracas " ,
         " ciudad " : " Maracaibo " ,
         " region " : " America / Venezuela "
     },
@@ -75,8 +75,8 @@
        	" iata " : " ACA " ,
         " nombre " : " Aeropuerto En t. Gral. Juan alvarez " ,
 	" pais " : " México " ,
-	" provincia " : " Acapulco " ,
-        " ciudad " : " 	Acapulco " ,
+	" provincia " : " Acapulco ",
+        " ciudad " : " 	Acapulco ",
         " region " : " America / México "
     },
     {
