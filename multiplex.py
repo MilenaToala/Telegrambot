@@ -15,11 +15,12 @@ class Recorrido:
 
 class Aport:
     def __init__(self, data):
-        self.nombre = data["nombre"]
         self.iata = data["iata"]
+        self.nombre = data["nombre"]
         self.pais = data["pais"]
         self.estado = data["provincia"]
         self.ciudad = data["ciudad"]
+        self.region = data["region"]
         self.arrayv1 = []
 
     def new_vuelo(self, aptos, min_valor = 4, max_valor = 8):
