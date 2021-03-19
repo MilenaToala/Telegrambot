@@ -76,7 +76,7 @@
         " nombre " : " Aeropuerto En t. Gral. Juan alvarez " ,
 	" pais " : " México " ,
 	" provincia " : " Acapulco " ,
-        " ciudad " : " 	Acapulco " ,
+        " ciudad " : " Acapulco " ,
         " region " : " America / México "
     },
     {
@@ -84,7 +84,7 @@
         " nombre " : " Aeropuerto Internacional de Ciudad del Cabo " ,
 	" pais " : " Sudáfrica " ,
 	" provincia " : " Ciudad del Cabo " ,
-        " ciudad " : " 	Ciudad del Cabo " ,
+        " ciudad " : " Ciudad del Cabo " ,
         " region " : " África / Sudáfrica "
     },
     {
@@ -92,15 +92,15 @@
         " nombre " : " Aeropuerto Internacional de Chiang Kai Shek " ,
 	" pais " : " Taiwán " ,
 	" provincia " : " Taipei " ,
-        " ciudad " : " 	Taipei " ,
+        " ciudad " : " Taipei " ,
         " region " : " Asia / Taiwán "
     },
     {
-       	" iata " : " 	SEL " ,
+       	" iata " : " SEL " ,
         " nombre " : " Aeropuerto Incheon Internacional " ,
 	" pais " : " Corea " ,
 	" provincia " : " Seúl " ,
-        " ciudad " : " 	Seúl " ,
+        " ciudad " : " Seúl " ,
         " region " : " Asia / Corea "
     },
     {
@@ -108,7 +108,7 @@
         " nombre " : " Aeropuerto Murtala Muhammed " ,
 	" pais " : " Nigeria" ,
 	" provincia " : " Lagos " ,
-        " ciudad " : " 	Lagos " ,
+        " ciudad " : " Lagos " ,
         " region " : " África / Nigeria "
     },
     {
@@ -116,7 +116,7 @@
         " nombre " : " Aeropuerto Kenyatta " ,
 	" pais " : " Kenia " ,
 	" provincia " : " Nairobi " ,
-        " ciudad " : " 	Nairobi " ,
+        " ciudad " : " Nairobi " ,
         " region " : " África / Kenia"
     }
 ]
